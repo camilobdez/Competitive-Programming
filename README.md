@@ -1,2 +1,3 @@
-# Competitive Programming
-My competitive programming solutions
+My competitive programming solutions.
+
+At the moment it will contain mainly solutions to problems from USACO contests
