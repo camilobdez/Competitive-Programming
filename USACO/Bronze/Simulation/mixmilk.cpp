@@ -1,7 +1,8 @@
+//link: http://www.usaco.org/index.php?page=viewproblem2&cpid=855
+
 #include <cstdio>
 #include <iostream>
 using namespace std;
-
 
 int main() {
 	freopen("mixmilk.in", "r", stdin);
