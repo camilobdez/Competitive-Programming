@@ -1,3 +1,5 @@
+//link: http://www.usaco.org/index.php?page=viewproblem2&cpid=567
+
 #include <bits/stdc++.h>
 
 
