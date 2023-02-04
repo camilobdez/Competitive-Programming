@@ -15,11 +15,7 @@ void solve() {
 		cero += a==0;
 	}
  
-	if (cero || neg%2==0) {
-		cout << sa << endl;
-	} else {
-		cout << sa - 2*minn << endl;
-	}
+	cout << sa - 2*minn*!(cero || !(neg%2)) << endl;
  
 }
  
@@ -29,6 +25,5 @@ int main() {
 	while (t--) {
 		solve();
 	}
- 
 	return 0;
 }
