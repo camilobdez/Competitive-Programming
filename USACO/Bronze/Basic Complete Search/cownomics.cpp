@@ -33,13 +33,13 @@ int main() {
 label2:
 		if (spot[row][i]==plain[row][i]) continue;
 		
-		for (int j=0; j<N; j++) {
+		for (int j=0; j<n; j++) {
 			//cout << spot[row][i] << endl << plain[row][i] << endl;
 			if (spot[row][i]==plain[j][i]) goto label;
 		}
 		
 		l2=true;
-		if (row+1 <N) {
+		if (row+1 <n) {
 			row++;
 			goto label2;
 		} else {
