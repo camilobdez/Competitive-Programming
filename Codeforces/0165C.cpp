@@ -2,6 +2,7 @@
  
 #include <bits/stdc++.h>
 using namespace std;
+using ll = long long;
  
 void init_code() {
 	#ifndef ONLINE_JUDGE
@@ -12,15 +13,14 @@ void init_code() {
  
  
 int main() {
-	init_code();
+	//init_code();
 	ios_base::sync_with_stdio(false); cin.tie(0);
-    long long k;
+    ll k;
     string s;
     cin >> k >> s;
-    map <long long, long long> mp;
+    map <ll, ll> mp;
     mp[0] = 1 ;
-    long long sum = 0;
-    long long ans = 0;
+    ll sum = 0, ans = 0;
  
     for (auto i : s) {
         sum += i - '0';
