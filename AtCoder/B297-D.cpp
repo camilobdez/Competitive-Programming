@@ -11,23 +11,18 @@ int main() {
 	        break;
 	    } else {
 	        if (max(a,b)/min(a,b)>=2) {
-	            long long g = max(a, b), p = min(a, b);
-	            g -= p*g/p, a = g, b = p, c+=d;
+	            long long g = max(a, b), p = min(a, b), d=g/p;
+	            g -= p*d, a = g, b = p, c+=d;
 	        } else {
-	            if (a > b) {
-	                a -= b;
-	            } else {
-	                b -= a;
-	            }
+	            if (a > b) a -= b;
+	            else b -= a;
 	            c++;
 	        }
 	    }
 	}
-	if (c-1>=0) {
-	    c=c-1;
-	} else {
-	    c=0;
-	}
+	if (c-1>=0) c--;
+	else c=0;
+	
 	cout << c;
 
 	return 0;
