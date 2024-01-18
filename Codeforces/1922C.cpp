@@ -14,7 +14,7 @@ using namespace std;
 void solve() {
   int n, m, l, r;
   cin>>n;
-  vt<int> a(n+1), pre(n+1, 0), suf(n+2, 0);
+  vt<int> a(n+1), pre(n+1, 0), suf(n+1, 0);
   for (int i=1; i<=n; i++) cin>>a[i];
 
   pre[2]=1;
@@ -40,8 +40,6 @@ void solve() {
     if (l<r) cout<<pre[r]-pre[l]<<"\n";
     else cout<<suf[r]-suf[l]<<"\n";
   }
-
-  
 }
 
 int main() {
